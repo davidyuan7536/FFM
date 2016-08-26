@@ -1,0 +1,138 @@
+.H-article {
+    text-transform: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.C-wrap {
+    padding: 20px 0;
+}
+
+.article-preview-wrap {
+    padding: 20px 0;
+    border-bottom: 1px solid #cbd0d6;
+}
+
+.article-preview-first {
+    padding-top: 0;
+}
+
+.article-preview-image {
+    float: left;
+    width: 230px;
+}
+.article-preview-title,
+.article-preview-content {
+    width: 410px;
+    float: left;
+}
+
+.article-preview-title {
+    float: left;
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 8px;
+}
+
+.article-preview-title a {
+    color: black;
+    text-decoration: none;
+}
+
+.article-preview-title a:hover {
+    background-color: #ec0009;
+    color: white;
+}
+
+.article-preview-content {
+    line-height: 1.5em;
+    color: #6a6d71;
+}
+
+p,
+.intro {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.intro {
+    font-weight: bold;
+    color: #202020;
+}
+
+p {
+    color: #6a6d71;
+    margin: 0;
+    padding: 0 0 1.6em;
+}
+
+p a {
+    color: #000;
+}
+
+.photo {
+    background: #cbd0d6;
+}
+
+.photo-left {
+    float: left;
+    margin: 3px 30px 30px 0;
+}
+
+.fixed .photo-left {
+    max-width: 350px;
+    overflow: hidden;
+}
+
+blockquote {
+    margin: 0 0 20px;
+    padding: 32px 0 10px;
+    border-top: 1px solid #cbd0d6;
+    border-bottom: 1px solid #cbd0d6;
+    background: url("../i/decor/q-open.png") 0 10px no-repeat;
+    clear: both;
+}
+
+blockquote p {
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+    line-height: normal;
+    padding: 0 40px 22px;
+    background: url("../i/decor/q-close.png") 100% 100% no-repeat;
+}
+
+p.anchor-link,
+a.anchor-link {
+    background-color: #202020;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+p.anchor-link {
+    margin: 0 0 1.6em;
+}
+
+p.anchor-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.anchor-link {
+    text-decoration: none;
+}
+
+a.internal-link {
+    color: #ed1c24;
+}
+
+a.internal-link:hover {
+    background: #ed1c24;
+    color: #fff;
+    text-decoration: none;
+}

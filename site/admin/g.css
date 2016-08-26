@@ -1,0 +1,31 @@
+.G-wrap {
+    border: 1px solid #cbd0d6;
+    margin-bottom: 8px;
+    cursor: default;
+}
+.G-wrap img { vertical-align: -3px; }
+.G-head {
+    background: #cbd0d6 url(/site/i/decor/alert-overlay.png) repeat-x;
+    padding: 2px;
+}
+.G-item { padding: 1px 0 1px 18px; }
+.G-head span,
+.G-item span { cursor: pointer; }
+.G-head span:hover,
+.G-item span:hover { color: #0066cc; }
+#Space {
+    height: 50px;
+    border: 2px solid #fff;
+}
+#Space.ui-state-hover {
+    border: 2px dotted #ffb515;
+}
+.ui-state-active .G-head,
+.ui-state-active { background-color: #ffb515; }
+.G-nonexpandable.ui-draggable-dragging,
+.G-item.ui-draggable-dragging {
+    background-color: #fff;
+    border: 1px solid #cbd0d6;
+    padding: 4px;
+    z-index: 10;
+}

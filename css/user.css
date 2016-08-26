@@ -1,0 +1,20 @@
+.User-suggest {
+    border: 1px solid #cbd0d6;
+    background-color: #fff;
+    position: absolute;
+    text-align: left;
+    width: 285px;
+    z-index: 999;
+    -moz-box-shadow: 5px 5px 5px rgba(72,72,72,0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(72,72,72,0.5);
+    box-shadow: 5px 5px 5px rgba(72,72,72,0.5);
+}
+
+.User-suggest-item {
+    cursor: pointer;
+    padding: 6px;
+}
+
+.User-suggest-item:hover {
+    background-color: #cbd0d6;
+}

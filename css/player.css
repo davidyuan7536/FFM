@@ -1,0 +1,111 @@
+.player-wrap {
+    width: 280px;
+    height: 54px;
+    overflow: hidden;
+}
+.player {
+    position: relative;
+    z-index: 1;
+}
+.player-enabled {
+    background: url("../i/sprites.png") -41px -84px no-repeat;
+}
+.player-disabled .player-name {
+    padding: 12px 0 1px 33px;
+}
+.player-name {
+    padding: 5px 0 13px 33px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 190px;
+    line-height: 15px;
+}
+.player-name a {
+    color: #ec0009;
+}
+.player-name a:hover {
+    text-decoration: none;
+    background-color: #ec0009;
+    color: white;
+}
+.player-mp3 {
+    display: none;
+}
+.player-button {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+}
+.player-button {
+    top: 16px;
+    left: 1px;
+    cursor: pointer;
+}
+.player-buttonPlay {
+    background: url("../i/sprites.png") -275px -33px no-repeat;
+}
+.player-buttonPause {
+    background: url("../i/sprites.png") -301px -33px no-repeat;
+}
+.player-enabled .player-mp3 {
+    background: url("../i/sprites.png") -352px -38px no-repeat;
+    top: 18px;
+    left: 260px;
+}
+.player-disabled .player-mp3 {
+    background: url("../i/sprites.png") -327px -33px no-repeat;
+    top: 16px;
+    left: 1px;
+}
+.player-mp3 span {
+    display: none;
+}
+.player-genres {
+    padding-left: 33px;
+}
+.player-genres {
+    font-size: 11px;
+    line-height: 14px;
+}
+.player-genres,
+.player-genres a {
+    color: #aaafb6;
+}
+.player-genres a:hover {
+    color: #000;
+}
+.player-progressbar,
+.player-progressbar div,
+.player-progressbar span {
+    width: 192px;
+    height: 7px;
+    display: block;
+}
+.player-progressbar {
+    background: #cbd0d6 url("../i/sprites.png?1") -467px -20px no-repeat; /* 275 */
+    top: 24px;
+    left: 32px;
+    position: absolute;
+}
+.player-progressbar div {
+    background: url("../i/sprites.png?1") -467px -10px no-repeat;
+}
+.player-progressbar span {
+    background: url("../i/sprites.png?1") -275px -1px no-repeat;
+}
+.player-volume,
+.player-volume span {
+    width: 52px;
+    height: 7px;
+    display: block;
+}
+.player-volume {
+    background: #cbd0d6 url("../i/sprites.png?1") -467px -10px no-repeat;
+    top: 24px;
+    left: 229px;
+    position: absolute;
+}
+.player-volume span {
+    background: url("../i/sprites.png") 0 -1px no-repeat;
+}
+

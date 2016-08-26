@@ -1,0 +1,245 @@
+/******************************************************************************/
+/* JQUERY UI                                                                  */
+/******************************************************************************/
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+.ui-widget :active { outline: none; }
+
+/* Overlays */
+.ui-widget-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/i/decor/overlay.png");
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/*
+ * jQuery UI Dialog
+ *
+ */
+
+.ui-dialog {
+    position: absolute;
+    width: 300px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #7d8184;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 0 0 15px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 0 15px rgba(0,0,0,0.2);
+}
+.ui-dialog-titlebar {
+    font-weight: bold;
+    padding: 12px 16px 0;
+    cursor: default;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.ui-dialog-title {
+    display: block;
+    border-bottom: 1px solid #7d8184;
+    padding-bottom: 10px;
+}
+.ui-dialog-titlebar-close {
+    margin: -10px 0 0;
+    padding: 1px;
+    position: absolute;
+    top: 24px;
+    right: 12px;
+    width: 19px;
+    height: 18px;
+}
+.ui-dialog-titlebar-close .ui-icon {
+    background: url("/i/icons/close.png") 0 0 no-repeat;
+    width: 15px;
+    height: 15px;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+.ui-dialog-content {
+    padding: 20px 20px;
+}
+
+
+/*
+ * jQuery UI Tabs
+ *
+ */
+
+.ui-tabs { position: relative; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 0; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { z-index: 1; left: -1px; margin-top: -3px; padding-bottom: 2px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: default; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+.ui-tabs .ui-tabs-nav {
+    background-color: #edf0f3;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected  {
+    background-color: #fff;
+    border: 1px solid #d5d9de;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    border-right: 1px solid #fff;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    width: 100px;
+    color: #101010;
+}
+
+.ui-tabs-panel {
+    padding: 18px 0;
+}
+
+/* Autocomplete
+----------------------------------*/
+.ui-autocomplete { position: absolute; cursor: default; }
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+}
+/* workarounds */
+* html .ui-autocomplete { width: 1px; height: 200px; } /* without this, the menu expands to 100% in IE6 */
+
+/* Interaction states
+----------------------------------*/
+.ui-menu-item .ui-state-hover  { background: #ec0009; color: #ffffff; }
+.ui-menu-item .ui-state-hover a, .ui-menu-item .ui-state-hover a:hover { color: #ffffff; text-decoration: none; }
+
+/* Menu
+----------------------------------*/
+.ui-menu {
+    border: 1px solid #7D8184;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -moz-box-shadow: 5px 5px 5px rgba(72, 72, 72, 0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(72, 72, 72, 0.5);
+    box-shadow: 5px 5px 5px rgba(72, 72, 72, 0.5);
+}
+
+.ui-menu .ui-menu {
+    margin-top: -3px;
+}
+
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    float: left;
+    clear: left;
+    width: 100%;
+}
+
+.ui-menu .ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: .2em .4em;
+    line-height: 1.5;
+    zoom: 1;
+}
+
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    font-weight: normal;
+}
+
+/******************************************************************************/
+/* DATE PICKER                                                                */
+/******************************************************************************/
+.ui-datepicker {
+    border: 1px solid #eee;
+    background-color: #fff;
+    -moz-box-shadow: 5px 5px 5px rgba(72,72,72,0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(72,72,72,0.5);
+    box-shadow: 5px 5px 5px rgba(72,72,72,0.5);
+}
+
+.ui-datepicker { width: 17em; padding: .2em .2em 0; }
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.ui-datepicker .ui-datepicker-prev { left:2px; }
+.ui-datepicker .ui-datepicker-next { right:2px; }
+.ui-datepicker .ui-datepicker-prev-hover { left:1px; }
+.ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.ui-datepicker td { border: 0; padding: 1px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+.ui-datepicker .ui-state-default {
+    color: #ed1c24;
+}
+
+.ui-datepicker .ui-state-active {
+    background-color: #7d8184;
+    color: #fff;
+}
+
+.ui-datepicker .ui-state-default:hover {
+    background: #ed1c24;
+    color: #fff;
+}
+
+.ui-datepicker-trigger {
+    cursor: pointer;
+}
+

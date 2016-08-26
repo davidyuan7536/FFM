@@ -1,0 +1,74 @@
+.filter {
+    background: #eff3f6;
+    border: 1px solid #f0f1f5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 8px 10px;
+    color: #424242;
+}
+.filter-all span,
+.filter a {
+    color: #000;
+    text-decoration: none;
+}
+.filter-all:hover span,
+.filter a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.filter-left {
+    float: left;
+}
+.filter-right {
+    float: right;
+    border-left: 1px solid #cbd0d6;
+    padding: 0 0 0 10px;
+}
+.filter-all {
+    cursor: pointer;
+}
+.filter-all em {
+    background: url("../i/sprites.png") -63px -18px no-repeat;
+    width: 16px;
+    height: 10px;
+    font-size: 0;
+    display: inline-block;
+    margin-left: 4px;
+}
+span.filter-on {
+    background: #fff;
+    padding: 7px 0;
+}
+.filter-on em {
+    background-position: -63px 2px;
+}
+.filter-extra {
+    border: 1px solid #cbd0d6;
+    background: #fff;
+    padding: 10px;
+    margin-top: 6px;
+}
+.filter-extra-wrap {
+    float: left;
+    width: 150px;
+    overflow: hidden;
+}
+.filter-extra-block {
+    padding: 0 0 8px;
+}
+.filter-extra-title {
+    font-weight: bold;
+}
+.filter-extra ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.filter-extra li {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    background: url("../i/sprites.png") -477px 6px no-repeat;
+}

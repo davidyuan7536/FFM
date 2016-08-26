@@ -1,0 +1,12 @@
+img,
+.menu a,
+.menu strong,
+.articles-nav a,
+.artist-photo span {
+    behavior: url("../js/iepngfix.htc");
+}
+
+.articles-nav a {
+    background-position: 0 -52px;
+}
+

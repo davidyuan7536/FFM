@@ -1,0 +1,11 @@
+AuthType Basic
+AuthName "Restricted Files"
+AuthUserFile /home/FARFROMMOSCOW/prod/farfrommoscow2010/.htpasswd
+Require user macfadyen vlad
+
+<FilesMatch "(-upload\.php)$">
+Satisfy Any
+Order allow,deny
+Allow from all
+Deny from none
+</FilesMatch>

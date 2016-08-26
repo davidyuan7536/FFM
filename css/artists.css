@@ -1,0 +1,454 @@
+.H-artist,
+.H-promoter {
+    text-transform: none;
+    font-weight: bold;
+    padding: 0;
+}
+
+.A-tags h3 {
+    margin-right: 8px;
+}
+
+.A-tags .H-genres {
+    vertical-align: 3px;
+}
+
+.A-tags-edit {
+    background-color: #cbd0d6;
+    padding: 1px 2px 2px;
+    margin-right: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.A-tags-edit:hover {
+    background-color: #727272;
+    color: #fff;
+}
+
+.A-card-wrap {
+    padding: 20px 0 50px;
+}
+
+.A-row {
+    clear: both;
+}
+
+.A-wrap {
+    width: 300px;
+    height: 160px;
+    border-top: 1px solid #cbd0d6;
+    float: left;
+    margin-right: 25px;
+    padding-top: 25px;
+}
+
+.A-row-first .A-wrap {
+    border-top: none;
+}
+
+.A-card-image,
+.A-image {
+    float: left;
+    position: relative;
+}
+
+.A-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 130px;
+    background: url("../i/sprites.png") -327px -63px no-repeat;
+}
+
+.A-info {
+    float: right;
+    width: 150px;
+    padding-top: 20px;
+}
+
+.A-card-info {
+    float: right;
+    width: 490px;
+}
+
+.A-text {
+    line-height: 1.5em;
+    color: #6a6d71;
+}
+
+.A-links {
+    padding: 20px 0 0;
+    overflow: hidden;
+    font-size: 11px;
+}
+
+.A-links-ul,
+.A-links-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.A-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.A-links a:hover {
+    text-decoration: underline;
+}
+
+.AA-empty {
+    border-top: 2px solid #cbd0d6;
+    border-bottom: 2px solid #cbd0d6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.AA-wrap {
+    padding: 20px 0;
+}
+
+.AA-image {
+    float: left;
+    width: 150px;
+}
+
+.AA-content {
+    float: left;
+    width: 490px;
+}
+
+.AA-title {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.AA-title a { color: #202020; text-decoration: none; }
+.AA-title a:hover { background-color: #ec0009; color: white; }
+.AA-content { line-height: 1.5em; color: #6a6d71; }
+
+.AA-content {
+    /*font-size: 11px;*/
+    color: #6a6d71;
+}
+
+.artist-region a {
+    background: black;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.macff .artist-region a {
+    background: black url("../i/decor/d2.png") 0 100% repeat-x;
+}
+
+.artist-region a:hover {
+    background-color: #ec0009;
+    color: #fff;
+}
+
+
+
+/********************************************************************/
+/* ARTIST PROFILE - EVENTS                                          */
+/********************************************************************/
+.A-Events-wrap {
+    border-top: 1px solid #cbd0d6;
+    border-bottom: 2px solid #cbd0d6;
+}
+
+.A-Events-row {
+    padding: 3px 0;
+    border-top: 1px solid #cbd0d6;
+}
+
+.A-Events-new {
+    background-color: #edf0f3;
+}
+
+.A-Events-day {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.A-Events-text {
+    color: #6a6d71;
+    font-size: 11px;
+    padding-right: 4px;
+}
+
+.A-Events-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.A-Events-date {
+    font-size: 11px;
+    color: #202020;
+}
+
+
+
+/********************************************************************/
+/* ARTIST PROFILE - RELEASES                                        */
+/********************************************************************/
+.Release-empty {
+    text-align: center;
+}
+
+.Release-grid {
+    border-top: 1px solid #cbd0d6;
+    border-bottom: 1px solid #cbd0d6;
+    padding: 10px 0;
+}
+
+.Release-grid .Release-left {
+    float: left;
+}
+
+.Release-grid .Release-right {
+    float: right;
+}
+
+.Release-item {
+    width: 300px;
+    padding-bottom: 14px;
+}
+
+.Release-list {
+    border-bottom: 2px solid #000;
+    padding: 10px 0;
+}
+
+.Release-list .Release-item {
+    width: 210px;
+    overflow: hidden;
+    float: left;
+}
+
+.Release-grid .Release-marker {
+    display: none;
+}
+
+.Release-marker {
+    left: 230px;
+    margin: 0 0 -10px 230px;
+    height: 7px;
+    font-size: 0;
+}
+
+.Release-selected .Release-image div {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-box-shadow: 0 0 0 3px #000;
+    -webkit-box-shadow: 0 0 0 3px #000;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+}
+
+.Release-selected .Release-image img {
+    border: 1px solid #fff;
+    position: absolute;
+}
+
+.Release-grid .Release-view,
+.Release-grid .Release-item-first,
+.Release-list .Release-preview,
+.Release-list .Release-buttons {
+    display: none;
+}
+
+.Release-list .clear {
+    display: none;
+}
+
+.Release-image {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.Release-view .Release-image {
+    float: left;
+    padding-right: 8px;
+}
+
+.Release-preview .Release-image {
+    padding-top: 6px;
+}
+
+.Release-info {
+    width: 140px;
+    float: left;
+}
+
+.Release-select {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.Release-select-hover,
+.Release-select-hover span,
+.Release-select:hover,
+.Release-select:hover span {
+    background: #ed1c24;
+    color: #fff !important;
+}
+
+.Release-preview {
+    padding-bottom: 6px;
+}
+
+.Release-preview .Release-select {
+    font-size: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #000;
+}
+
+.Release-preview .Release-select span {
+    color: #6a6d71;
+}
+
+.Release-view .Release-select {
+    margin-top: -2px;
+    padding-bottom: 2px;
+}
+
+.Release-text {
+    color: #6a6d71;
+    font-size: 11px;
+}
+
+.Release-genre {
+    font-size: 10px;
+}
+
+.Release-add {
+    padding: 10px 0;
+    text-align: right;
+}
+
+.Release-tracks {
+    padding: 40px 0;
+}
+
+.Release-track-frame {
+    border-top: 2px solid #000;
+    padding: 12px 0 10px;
+}
+
+.Release-track-selected {
+    background-color: #f4f5f7;
+}
+
+.Release-track-list {
+    border-top: 2px solid #000;
+}
+
+.Release-track-wrap {
+    border-bottom: 1px solid #000;
+    padding: 2px 0;
+    cursor: default;
+}
+
+.Release-track-list-total {
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    padding: 4px 10px 7px;
+}
+
+.Release-track-list-total a {
+    color: #fff;
+}
+
+
+
+/********************************************************************/
+/* ARTIST PROFILE - AUDIO                                           */
+/********************************************************************/
+.A-Audio-empty {
+    border-top: 2px solid #cbd0d6;
+    border-bottom: 2px solid #cbd0d6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.Hello-Mini {
+    cursor: pointer;
+}
+
+.Hello-Mini-Image {
+    display: block;
+    float: right;
+    width: 17px;
+    height: 17px;
+    background: url("/i/icons/mini-play.png") 0 0 no-repeat;
+}
+
+.Hello-Mini-Playing {
+    background-color: #edf0f3;
+}
+
+.Hello-Mini-Playing .Hello-Mini-Image {
+    background-image: url("/i/icons/mini-stop.gif"); 
+}
+
+
+
+/********************************************************************/
+/* ARTIST PROFILE - PHOTOS                                          */
+/********************************************************************/
+.Photos-wrap {
+    border-top: 1px solid #cbd0d6;
+    border-bottom: 1px solid #cbd0d6;
+    padding: 30px 0 0 20px;
+}
+
+.Photos-empty {
+    border-top: 2px solid #cbd0d6;
+    border-bottom: 2px solid #cbd0d6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.Photos-item {
+    float: left;
+    margin: 0 25px 30px 0;
+    position: relative;
+}
+
+.Photos-action {
+    background: rgba(255,255,255,0.7);
+    padding: 2px 4px 3px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.Profile-extra-info {
+    background: #e7eaef !important;
+    color: #343434 !important;
+}
+
+div.Profile-extra-info {
+    padding: 20px;
+    margin: 16px 0 0;
+}
+
+.Profile-extra-info a {
+    color: #343434;
+}
+
